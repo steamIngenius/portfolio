@@ -1,73 +1,93 @@
 <!DOCTYPE HTML>
 <html lang="en">
+<!-- Project 1 submission by Micah Hawkins
+	Everything on this page is currently just a place holder for future projects.
+	I will change this page's contents when I have some more interesting things to add and showcase.
+-->
 	<head>
+		<!-- compatibility stuff for different browsers -->
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scal=1">
 
+		<!-- load css for Bootstrap and our local stylesheet -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
 		<link href="css/styles.css" rel="stylesheet" type="text/css">
+
+		<!-- grab fonts from Gooble's web fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
 
+		<!-- load our scripts for JQuery and Twitter's Bootstrap framwork -->
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/bootstrap.min.js"></script>
 
 		<title>Portfolio Project</title>
 	</head>
 	<body>
+		<!-- main page container -->
 		<div class="container">
+			<!-- title bar --> 
 			<div class="row">
+			    <!-- My logo, currently a pic of William Murray -->
 				<div class="col-md-6">
 					<img class="title-logo" src="http://fillmurray.com/150/150" alt="title logo">
 				</div>
+				<!-- Name and job title -->
 				<div class="col-md-6 text-right text-uppercase">
 					<h1 class="text-thin title-super">Micah Hawkins</h1>
 					<h4 class="title-sub">Front-end Hacker</h4>
 				</div>
 			</div>
+			<!-- seperator between title bar and pretty 'splash' image -->
 			<div class="row">
 				<div class="col-md-12">
 					<hr>
 				</div>
 			</div>
+			<!-- splash image, currently a pic of delicious bacon -->
 			<div class="row">
 				<div class="col-md-12">
 					<img class="img-responsive" src="http://baconmockup.com/1200/400" alt="main splash image">
 				</div>
 			</div>
+			<!-- featured work heading -->
 			<div class="row">
 				<div class="col-md-12 text-muted">
 					<h2 class="title-featured">Featured Work</h2>
 				</div>
 			</div>
+			<!-- full page container for projects, 3 rows inside, 1 for each -->
 			<div class="row text-center">
+				<!-- Bear project -->
 				<div class="col-md-4">
 					<img class="img-responsive" src="http://placebear.com/400/300" alt="project image" data-toggle="modal" data-target="#project1">
 					<h3 class="title-project text-uppercase">The Bears</h3>
 					<p class="text-muted">http://project.site/location</p>
 				</div>
+				<!-- Bacon project -->
 				<div class="col-md-4">
 					<img class="img-responsive" src="http://baconmockup.com/400/300" alt="project image" data-toggle="modal" data-target="#project2">
 					<h3 class="title-project text-uppercase">The Bacon</h3>
 					<p class="text-muted">http://project.site/location</p>
 				</div>
+				<!-- Bill project -->
 				<div class="col-md-4">
 					<img class="img-responsive" src="http://fillmurray.com/400/300" alt="project image" data-toggle="modal" data-target="#project3">
 					<h3 class="title-project text-uppercase">The Bill</h3>
 					<p class="text-muted">http://project.site/location</p>
 				</div>
-			</div>
-		</div>
+			</div> <!-- end of projects row -->
+		</div> <!-- end of #container -->
 
-		<!-- Modals -->
-		<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<!-- Modals: these will fade in on top of the page when the user clicks the associated project -->
+		<div class="modal fade" id="project1" tabindex="-1" role="dialog" aria-labelledby="modalBears" aria-hidden="true">
   			<div class="modal-dialog">
     			<div class="modal-content">
       				<div class="modal-header">
-        				<h4 class="modal-title" id="myModalLabel">Bears are amazing!</h4>
+        				<h4 class="modal-title" id="modalBears">Bears are amazing!</h4>
 					</div>
 					<div class="modal-body">
-        				<img class="img-responsive" src="http://placebear.com/600/400">
+        				<img class="img-responsive" src="http://placebear.com/600/400" alt="A majestic bear">
         				This was my first project in this class. I learned a lot about HTML and CSS.
       				</div>
       				<div class="modal-footer">
@@ -76,14 +96,14 @@
     			</div>
   			</div>
 		</div>
-		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="project2" tabindex="-1" role="dialog" aria-labelledby="modalBacon" aria-hidden="true">
   			<div class="modal-dialog">
     			<div class="modal-content">
       				<div class="modal-header">
-        				<h4 class="modal-title" id="myModalLabel">Bacon is delicious!</h4>
+        				<h4 class="modal-title" id="modalBacon">Bacon is delicious!</h4>
 					</div>
 					<div class="modal-body">
-        				<img class="img-responsive" src="http://baconmockup.com/600/400">
+        				<img class="img-responsive" src="http://baconmockup.com/600/400" alt="Succulent bacon">
         				This was my first project in this class. I learned a lot about HTML and CSS.
       				</div>
       				<div class="modal-footer">
@@ -92,14 +112,14 @@
     			</div>
   			</div>
 		</div>
-		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal fade" id="project3" tabindex="-1" role="dialog" aria-labelledby="modalZissou" aria-hidden="true">
   			<div class="modal-dialog">
     			<div class="modal-content">
       				<div class="modal-header">
-        				<h4 class="modal-title" id="myModalLabel">Team Zissou for the win!</h4>
+        				<h4 class="modal-title" id="modalZissou">Team Zissou for the win!</h4>
 					</div>
 					<div class="modal-body">
-        				<img class="img-responsive" src="http://fillmurray.com/600/400">
+        				<img class="img-responsive" src="http://fillmurray.com/600/400" alt="Sir William Murray">
         				This was my first project in this class. I learned a lot about HTML and CSS.
       				</div>
       				<div class="modal-footer">
